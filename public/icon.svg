@@ -1,10 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A2332;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="20" fill="#020617"/>
-  <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="url(#grad)" text-anchor="middle">FP</text>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#bgGrad)"/>
+  <!-- Africa outline simplified -->
+  <path d="M256 80 L280 95 L305 90 L330 105 L350 100 L370 115 L385 130 L390 160 L385 195 L395 230 L390 265 L380 300 L370 335 L355 365 L330 390 L300 410 L265 425 L256 430 L247 425 L212 410 L182 390 L157 365 L142 335 L132 300 L122 265 L117 230 L127 195 L122 160 L127 130 L142 115 L162 100 L182 105 L207 90 L232 95 Z"
+        fill="none"
+        stroke="url(#tealGrad)"
+        stroke-width="12"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <!-- Horizontal line through Africa -->
+  <line x1="100" y1="256" x2="412" y2="256" stroke="url(#tealGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Play button dots -->
+  <circle cx="115" cy="256" r="8" fill="#f97316"/>
+  <circle cx="397" cy="256" r="8" fill="#f97316"/>
+  <!-- Digital lines inside Africa -->
+  <g stroke="#0d9488" stroke-width="4" stroke-linecap="round" opacity="0.6">
+    <line x1="180" y1="220" x2="280" y2="220"/>
+    <line x1="190" y1="240" x2="320" y2="240"/>
+    <line x1="185" y1="260" x2="290" y2="260"/>
+    <line x1="195" y1="280" x2="270" y2="280"/>
+    <line x1="210" y1="300" x2="250" y2="300"/>
+  </g>
 </svg>
