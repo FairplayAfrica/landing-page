@@ -33,35 +33,35 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: '1',
-    name: 'Team Member',
-    role: 'Product Manager',
+    name: 'Alabi Ramat',
+    role: 'Team Lead & Product Manager',
     description:
-      'Leading product strategy and vision for FairPlay Africa.',
-    image: '/team/pm.jpg',
+      'Leading product strategy, vision, and team coordination for FairPlay Africa.',
+    image: '/team/ramat.jpg',
   },
   {
     id: '2',
-    name: 'Team Member',
-    role: 'Full Stack Developer',
+    name: 'Teslim Sadiq',
+    role: 'Software Engineer',
     description:
       'Building the core platform and fingerprinting technology.',
-    image: '/team/dev1.jpg',
+    image: '/team/teslim.jpg',
   },
   {
     id: '3',
-    name: 'Team Member',
-    role: 'Full Stack Developer',
+    name: 'Warris A.',
+    role: 'Backend Engineer',
     description:
-      'Developing monitoring systems and API integrations.',
-    image: '/team/dev2.jpg',
+      'Developing monitoring systems, APIs, and server infrastructure.',
+    image: '/team/warris.jpg',
   },
   {
     id: '4',
-    name: 'Team Member',
-    role: 'Designer',
+    name: 'Alabi Sabtiu',
+    role: 'Product Designer',
     description:
-      'Crafting intuitive user experiences and brand identity.',
-    image: '/team/designer.jpg',
+      'Crafting intuitive user experiences and the FairPlay Africa brand identity.',
+    image: '/team/sabtiu.jpg',
   },
 ];
 
