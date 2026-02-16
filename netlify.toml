@@ -136,15 +136,3 @@
   for = "/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
-# Handle trailing slashes
-[[redirects]]
-  from = "/:path/"
-  to = "/:path"
-  status = 301
-
-# 404 fallback
-[[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
