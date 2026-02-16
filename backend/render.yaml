@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: fairplay-backend
+    runtime: node
+    region: fra # Frankfurt — closest to Africa
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        sync: false # Set manually in Render dashboard
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false # e.g. https://fairplay.africa,https://www.fairplay.africa
+      - key: PORT
+        value: 10000 # Render default
+    healthCheckPath: /api/health
+    autoDeploy: true

@@ -72,7 +72,10 @@ export function SectionHeader({
         {title}
       </h2>
       {description && (
-        <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-400 max-w-3xl leading-relaxed mx-auto">
+        <p className={cn(
+          'mt-4 md:mt-6 text-base md:text-lg text-gray-400 max-w-3xl leading-relaxed',
+          align === 'center' && 'mx-auto'
+        )}>
           {description}
         </p>
       )}
