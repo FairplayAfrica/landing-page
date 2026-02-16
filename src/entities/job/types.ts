@@ -26,7 +26,7 @@ export const JOB_TEAMS = [
   "People & Culture",
 ] as const;
 
-export const JOB_LOCATIONS = ["Lagos, Nigeria"] as const;
+export const JOB_LOCATIONS = ["Remote", "Lagos, Nigeria"] as const;
 
 export const JOB_TYPES = [
   "Full-time",
