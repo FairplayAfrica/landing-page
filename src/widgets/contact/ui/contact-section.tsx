@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import { motion } from 'framer-motion';
+import * as React from "react";
+import { motion } from "framer-motion";
 import {
   Mail,
   Send,
@@ -10,33 +10,33 @@ import {
   Newspaper,
   ArrowRight,
   CheckCircle,
-} from 'lucide-react';
-import { Section, SectionHeader } from '@/shared/ui/section';
-import { Card } from '@/shared/ui/card';
-import { Button } from '@/shared/ui/button';
-import { Input } from '@/shared/ui/input';
-import { Textarea } from '@/shared/ui/textarea';
-import { cn } from '@/shared/lib/utils';
-import { staggerItem, fadeInUp } from '@/shared/lib/animations';
+} from "lucide-react";
+import { Section, SectionHeader } from "@/shared/ui/section";
+import { Card } from "@/shared/ui/card";
+import { Button } from "@/shared/ui/button";
+import { Input } from "@/shared/ui/input";
+import { Textarea } from "@/shared/ui/textarea";
+import { cn } from "@/shared/lib/utils";
+import { staggerItem, fadeInUp } from "@/shared/lib/animations";
 
 const contactTypes = [
   {
     icon: MessageSquare,
-    title: 'General Inquiries',
-    email: 'hello@fairplay.africa',
-    description: 'Questions about FairPlay Africa or our services',
+    title: "General Inquiries",
+    email: "hello@fairplay.africa",
+    description: "Questions about FairPlay Africa or our services",
   },
   {
     icon: Building,
-    title: 'Partnership Inquiries',
-    email: 'partnerships@fairplay.africa',
-    description: 'Interested in partnering with us',
+    title: "Partnership Inquiries",
+    email: "partnerships@fairplay.africa",
+    description: "Interested in partnering with us",
   },
   {
     icon: Newspaper,
-    title: 'Media & Press',
-    email: 'press@fairplay.africa',
-    description: 'Press inquiries and media requests',
+    title: "Media & Press",
+    email: "press@fairplay.africa",
+    description: "Press inquiries and media requests",
   },
 ];
 
@@ -103,22 +103,14 @@ export function ContactSection() {
                       Send us a message
                     </h2>
                     <p className="text-gray-400 mb-8">
-                      Fill out the form below and we&apos;ll get back to you as soon as
-                      possible.
+                      Fill out the form below and we&apos;ll get back to you as
+                      soon as possible.
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid sm:grid-cols-2 gap-4">
-                        <Input
-                          label="First Name"
-                          placeholder="John"
-                          required
-                        />
-                        <Input
-                          label="Last Name"
-                          placeholder="Doe"
-                          required
-                        />
+                        <Input label="First Name" placeholder="John" required />
+                        <Input label="Last Name" placeholder="Doe" required />
                       </div>
 
                       <Input

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import { motion } from 'framer-motion';
+import * as React from "react";
+import { motion } from "framer-motion";
 import {
   Handshake,
   TrendingUp,
@@ -15,88 +15,91 @@ import {
   ArrowRight,
   Mail,
   Check,
-} from 'lucide-react';
-import { Section, SectionHeader } from '@/shared/ui/section';
-import { Card } from '@/shared/ui/card';
-import { Button } from '@/shared/ui/button';
-import { cn } from '@/shared/lib/utils';
-import { staggerItem, fadeInUp, cardHover } from '@/shared/lib/animations';
+} from "lucide-react";
+import { Section, SectionHeader } from "@/shared/ui/section";
+import { Card } from "@/shared/ui/card";
+import { Button } from "@/shared/ui/button";
+import { cn } from "@/shared/lib/utils";
+import { staggerItem, fadeInUp, cardHover } from "@/shared/lib/animations";
 
 const whyPartner = [
   {
     icon: Users,
-    title: 'Access to Creative Ecosystem',
+    title: "Access to Creative Ecosystem",
     description:
       "Connect with Africa's growing community of filmmakers, studios, and content creators.",
   },
   {
     icon: TrendingUp,
-    title: 'Ethical Monetization',
+    title: "Ethical Monetization",
     description:
-      'Help build sustainable revenue streams that benefit creators and the industry.',
+      "Help build sustainable revenue streams that benefit creators and the industry.",
   },
   {
     icon: BarChart3,
-    title: 'Data-Driven Insights',
+    title: "Data-Driven Insights",
     description:
-      'Gain valuable insights into content distribution and consumption patterns across Africa.',
+      "Gain valuable insights into content distribution and consumption patterns across Africa.",
   },
   {
     icon: Globe,
-    title: 'Africa-First Approach',
+    title: "Africa-First Approach",
     description:
-      'Be part of building infrastructure specifically designed for African markets.',
+      "Be part of building infrastructure specifically designed for African markets.",
   },
 ];
 
 const idealPartners = [
   {
     icon: Users,
-    title: 'Film Guilds',
+    title: "Film Guilds",
     description:
-      'Protect your members and advocate for creator rights with technology backing.',
+      "Protect your members and advocate for creator rights with technology backing.",
   },
   {
     icon: Building2,
-    title: 'Production Houses',
+    title: "Production Houses",
     description:
-      'Safeguard your productions and maximize returns on your investments.',
+      "Safeguard your productions and maximize returns on your investments.",
   },
   {
     icon: Tv,
-    title: 'Streaming Platforms',
+    title: "Streaming Platforms",
     description:
-      'Ensure content exclusivity and protect your licensed content library.',
+      "Ensure content exclusivity and protect your licensed content library.",
   },
   {
     icon: GraduationCap,
-    title: 'Creative Institutions',
+    title: "Creative Institutions",
     description:
-      'Educate the next generation about content protection and digital rights.',
+      "Educate the next generation about content protection and digital rights.",
   },
   {
     icon: Cpu,
-    title: 'Technology Partners',
+    title: "Technology Partners",
     description:
-      'Integrate our APIs and build complementary solutions for the creative industry.',
+      "Integrate our APIs and build complementary solutions for the creative industry.",
   },
 ];
 
 const partnershipSteps = [
   {
-    number: '01',
-    title: 'Reach Out',
-    description: 'Contact us via our partnership form or email to start the conversation.',
+    number: "01",
+    title: "Reach Out",
+    description:
+      "Contact us via our partnership form or email to start the conversation.",
   },
   {
-    number: '02',
-    title: 'Define Scope',
-    description: "We'll work together to define partnership goals and collaboration areas.",
+    number: "02",
+    title: "Define Scope",
+    description:
+      "We'll work together to define partnership goals and collaboration areas.",
   },
   {
-    number: '03',
-    title: 'Pilot Collaboration',
-    description: 'Start with a pilot program to test our partnership and measure results.',
+    number: "03",
+    title: "Pilot Collaboration",
+    description:
+      "Start with a pilot program to test our partnership and measure results.",
   },
 ];
 
@@ -121,7 +124,7 @@ export function PartnersSection() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
           >
-            Partner with{' '}
+            Partner with{" "}
             <span className="bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent">
               FairPlay Africa
             </span>
@@ -143,10 +146,7 @@ export function PartnersSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-transparent h-32" />
 
         <div className="relative z-10">
-          <SectionHeader
-            title="Why Partner With FairPlay?"
-            align="center"
-          />
+          <SectionHeader title="Why Partner With FairPlay?" align="center" />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyPartner.map((item, index) => (
@@ -154,10 +154,10 @@ export function PartnersSection() {
                 <motion.div
                   whileHover={cardHover}
                   className={cn(
-                    'h-full rounded-2xl p-6',
-                    'bg-gradient-to-br from-slate-800/50 to-slate-900/50',
-                    'border border-slate-700/50 hover:border-teal-500/50',
-                    'transition-all duration-300'
+                    "h-full rounded-2xl p-6",
+                    "bg-gradient-to-br from-slate-800/50 to-slate-900/50",
+                    "border border-slate-700/50 hover:border-teal-500/50",
+                    "transition-all duration-300",
                   )}
                 >
                   <div className="p-3 rounded-xl bg-teal-500/10 border border-teal-500/20 w-fit mb-4">
@@ -183,10 +183,7 @@ export function PartnersSection() {
         </div>
 
         <div className="relative z-10">
-          <SectionHeader
-            title="Our Ideal Partners"
-            align="center"
-          />
+          <SectionHeader title="Our Ideal Partners" align="center" />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {idealPartners.map((partner) => (
@@ -213,10 +210,7 @@ export function PartnersSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-transparent h-32" />
 
         <div className="relative z-10">
-          <SectionHeader
-            title="How to Partner With Us"
-            align="center"
-          />
+          <SectionHeader title="How to Partner With Us" align="center" />
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {partnershipSteps.map((step, index) => (
